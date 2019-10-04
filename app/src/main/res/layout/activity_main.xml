@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+    <fragment
+        android:id="@+id/listFrag"
+        android:name="example.technerd.com.fragmentswithrecycleview.ListFrag"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_list" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/detailFrag"
+            android:name="example.technerd.com.fragmentswithrecycleview.DeatailFrag"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            tools:layout="@layout/fragment_deatail" />
+
+        <fragment
+            android:id="@+id/addFrag"
+            android:name="example.technerd.com.fragmentswithrecycleview.AddPersonFrag"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="0dp"
+            tools:layout="@layout/fragment_add_person" />
+    </LinearLayout>
+
+</LinearLayout>
