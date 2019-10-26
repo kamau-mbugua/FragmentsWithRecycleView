@@ -14,7 +14,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_gravity="center|center_horizontal"
-        android:src="@drawable/contact" />
+        app:srcCompat ="@drawable/contact" />
 
     <TextView
         android:id="@+id/tvName"
